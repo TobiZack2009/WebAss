@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Diversity of English in Various Media Forms</title>
+    <style>
+       @import url(https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Unbounded:wght@200..900&display=swap);
+       
+       body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            
+            
+        }
+        *{
+            scroll-behavior: smooth;
+        }
+        /* Sticky Side Navigation */
+        .side-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 100%;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            z-index: 1000;
+        }
+        .side-nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 20px 0;
+            font-size: 24px;
+        }
+        .side-nav a.active {
+            color: #ff0;
+        }
+        .side-nav img {
+            width: 30px;
+            height: 30px;
+            filter: invert(1);
+        }
+        /* Full-Screen Sections */
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            position: relative;
+        }
+        /* Section Backgrounds */
+        .movies {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/film.jpg') no-repeat center center/cover;
+            
+        }
+        .music {
+            background: url('img/mus.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: #333;
+        }
+        .games {
+            background: url('img/game.jpg') no-repeat center center;
+            background-size: cover;
+            font-family: "Pixelify Sans";
+        }
+        .novels {
+            background: url('img/book.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .textbooks {
+            background: #f5f5f5;
+            color: #333;
+        }
+        /* Content Blocks */
+        .content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        /* Transitions */
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        /* Scroll Animation */
+        .parallax,.section {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            padding-left: 60px;
+        }
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .footer a {
+            color: #ff0;
+            text-decoration: none;
+        }
+        #intro{
+            background: url('https://t3.ftcdn.net/jpg/03/70/42/66/360_F_370426690_Pejt9KxjWTHPklsKwripaxr0iA17zupF.jpg') no-repeat center center;
+            background-size: cover;
+            backdrop-filter: blur(1px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Side Navigation -->
+    <nav class="side-nav">
+        <a href="#intro"><img src="icon/home.png" alt="Home Icon"></a>
+        <a href="#movies"><img src="icon/movie.png" alt="Movies Icon"></a>
+        <a href="#music"><img src="icon/mus.png" alt="Music Icon"></a>
+        <a href="#games"><img src="icon/game.png" alt="Games Icon"></a>
+        <a href="#novels"><img src="icon/book.png" alt="Novels Icon"></a>
+        <a href="#textbooks"><img src="icon/tbook.png" alt="Textbooks Icon"></a>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="intro" class="section fade-in">
+        <div class="content">
+            <h1>The Diversity of English in Various Media Forms</h1>
+            <p>The English language exhibits remarkable adaptability, molding itself to fit the distinct demands and audiences of various media forms. From the conversational tone of movies and TV shows to the poetic expressions in music, each medium employs English uniquely. This exploration covers how English varies across movies and TV shows, music, video games, novels, and textbooks, examining vocabulary, tone, grammar, and more.</p>
+        </div>
+    </section>
+
+    <!-- Movies & TV Shows Section -->
+    <section id="movies" class="section movies fade-in">
+        <div class="content">
+            <h2>Movies & TV Shows</h2>
+            <p>Movies and TV shows present a dynamic and diverse use of English, tailored to their genres and characters. The vocabulary ranges from simple and direct in action films to complex and expressive in dramas. The tone varies widely, from the formal dialogue of period pieces to the informal, often slang-filled conversations of modern comedies. Grammar and syntax often mirror natural speech, incorporating contractions, interruptions, and colloquial expressions.</p>
+            <p>Cultural and contextual nuances are embedded in the language, with regional accents, dialects, and contemporary slang reflecting cultural backgrounds and societal norms. Visual and audio elements play a crucial role, with body language, facial expressions, and sound effects enhancing the spoken words.</p>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="section music parallax fade-in">
+        <div class="content">
+            <h2>Music</h2>
+            <p>Music employs English in a poetic and emotional manner. Lyrics often use figurative language, with metaphors, similes, and wordplay. The tone can range from deeply emotional to rebellious or reflective. Grammar and syntax are flexible, breaking conventional rules for rhythm and rhyme. Music reflects the artist’s background and cultural context, with visual elements like album covers and music videos adding depth to the lyrics.</p>
+        </div>
+    </section>
+
+    <!-- Video Games Section -->
+    <section id="games" class="section games fade-in">
+        <div class="content">
+            <h2>Video Games</h2>
+            <p>The use of English in video games is tied to the game's world and genre. Vocabulary can be specialized, with unique terminology and jargon. The tone varies, from serious in strategy games to humorous in action games. Grammar and syntax often mimic natural speech in dialogue, with concise text for instructions.</p>
+            <p>Cultural and contextual nuances reflect the game's world-building, including references to gamer culture and pop culture. Visual and audio elements, such as graphics and voice acting, enhance the immersive experience.</p>
+        </div>
+    </section>
+
+    <!-- Novels Section -->
+    <section id="novels" class="section novels fade-in">
+        <div class="content">
+            <h2>Novels</h2>
+            <p>Novels showcase a broad range of vocabulary and tone, adapting to literary style and audience. Vocabulary can be simple or complex, with tones varying from humorous to contemplative. Grammar and syntax are diverse, with literary devices enriching the text.</p>
+            <p>Cultural and contextual nuances reflect time periods and settings, with novels often exploring deeper themes and social issues. Descriptive language creates vivid mental images, while audiobooks add vocal interpretation to the text.</p>
+        </div>
+    </section>
+
+    <!-- Textbooks Section -->
+    <section id="textbooks" class="section textbooks fade-in">
+        <div class="content">
+            <h2>Textbooks</h2>
+            <p>Textbooks use English in a formal, precise manner with technical vocabulary specific to the subject matter. The tone is instructional, aiming for clarity and accuracy. Grammar and syntax adhere to conventional rules, with complex structures explaining concepts thoroughly.</p>
+            <p>Cultural and contextual nuances are generally neutral, striving for universality. Visual elements like diagrams and infographics support the text, with interactive features enhancing the learning experience.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Oluwatobiloba Zaccheaus. All rights reserved. <a href="#intro">Back to Top</a></p>
+    </footer>
+
+</body>
+</html>
